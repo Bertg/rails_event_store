@@ -33,9 +33,11 @@ set :markdown, tables: true, autolink: true, fenced_code_blocks: true, with_toc_
 
 set :res_version_v1, "1.3.1"
 set :res_version_v2, "2.7.0"
+set :res_version_v3, "3.0.0"
 set :res_version, "2.7.0"
 
 page "/"
 page "/docs/v1/*", locals: { version: "v1" }, layout: "documentation"
 page "/docs/v2/*", locals: { version: "v2" }, layout: "documentation"
+page "/docs/v3/*", locals: { version: "v3" }, layout: "documentation"
 page "*", locals: { version: "v2" }
